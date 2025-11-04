@@ -13,7 +13,7 @@
       "dest": "/index.html"
     }
   ],
-  "buildCommand": "echo '请在本地构建后上传build/web-mobile目录'",
+  "buildCommand": null,
   "outputDirectory": "build/web-mobile",
   "framework": null,
   "headers": [
