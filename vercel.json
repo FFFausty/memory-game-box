@@ -18,7 +18,7 @@
       }
     }
   ],
-  "buildCommand": "echo '跳过构建，直接部署静态文件'",
+  "buildCommand": null,
   "outputDirectory": "build/web-mobile",
   "framework": null
 }

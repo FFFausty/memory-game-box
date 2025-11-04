@@ -1,3 +1,2 @@
-# 忽略所有文件，只部署构建结果
-*
-!build/web-mobile/
+# 允许所有文件，Vercel 需要访问项目文件进行部署
+# 构建输出目录已在 vercel.json 中指定为 build/web-mobile
