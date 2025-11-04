@@ -10,7 +10,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/index.html",
+      "dest": "/server.js",
       "headers": {
         "Cache-Control": "public, max-age=0, must-revalidate",
         "X-Frame-Options": "SAMEORIGIN",
@@ -26,6 +26,5 @@
     }
   ],
   "buildCommand": null,
-  "outputDirectory": "build/web-mobile",
   "framework": null
 }
