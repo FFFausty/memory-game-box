@@ -1,0 +1,21 @@
+{
+  "buildPath": "build/wechatgame",
+  "platform": "wechatgame",
+  "title": "经典游戏盒",
+  "description": "经典游戏盒 - 包含神经衰弱记忆游戏等多款经典游戏 - 基于Cocos Creator 3.8.7开发",
+  "startScene": "db://assets/MainMenu.scene",
+  "scenes": [
+    "db://assets/MainMenu.scene",
+    "db://assets/GameScence.scene"
+  ],
+  "md5Cache": true,
+  "mergeStartScene": false,
+  "debug": false,
+  "wechatgame": {
+    "appid": "",
+    "orientation": "landscape",
+    "separateEngine": false,
+    "REMOTE_SERVER_ROOT": "",
+    "subContext": ""
+  }
+}

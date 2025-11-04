@@ -1,0 +1,36 @@
+name: Build and Deploy to Vercel
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+    
+    - name: Install dependencies
+      run: npm install
+      
+    - name: Build project (本地构建后跳过此步骤)
+      run: |
+        echo "请在本地使用Cocos Creator构建项目"
+        echo "然后将build/web-mobile目录提交到Git"
+        echo "Vercel会自动部署已构建的文件"
+        
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: web-build
+        path: build/web-mobile/
+        retention-days: 1
