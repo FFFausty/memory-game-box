@@ -178,7 +178,7 @@ export class ModeSelector extends Component {
         if (label) {
             label.enableShadow = true;
             label.shadowColor = new Color(0, 0, 0, 100);
-            label.shadowOffset = new Vec3(2, 2, 0);
+            label.shadowOffset = new Vec2(2, 2);
             label.shadowBlur = 5;
         }
     }

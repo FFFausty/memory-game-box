@@ -4,9 +4,9 @@
   "description": "经典游戏盒 - 包含神经衰弱记忆游戏等多款经典游戏",
   "main": "main.js",
   "scripts": {
-    "build": "echo '跳过构建，直接部署静态文件'",
-    "build:debug": "cocos build --platform web-mobile --config build-config.json --debug",
-    "build:wechat": "cocos build --platform wechatgame --config build-config-wechat.json",
+    "build": "echo '请使用Cocos Creator GUI进行构建'",
+    "build:debug": "echo '请使用Cocos Creator GUI进行构建'",
+    "build:wechat": "echo '请使用Cocos Creator GUI进行构建'",
     "serve": "npx serve build/web-mobile -p 8080",
     "clean": "rm -rf build/",
     "preview": "npm run build && npm run serve",
@@ -22,9 +22,6 @@
   ],
   "author": "FFFausty",
   "license": "MIT",
-  "dependencies": {
-    "express": "^4.18.2"
-  },
   "dependencies": {
     "express": "^4.18.2"
   },

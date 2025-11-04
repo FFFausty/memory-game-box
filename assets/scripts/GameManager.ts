@@ -454,7 +454,7 @@ export class GameManager extends Component {
     private recordGameResult(totalTime: number) {
         try {
             // 尝试获取数据管理器实例
-            const dataManager = DataManager.getInstance();
+            const dataManager = this.dataManager;
             if (dataManager && typeof dataManager.recordGameResult === 'function') {
                 // 记录游戏结果
                 dataManager.recordGameResult(
