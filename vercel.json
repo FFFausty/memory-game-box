@@ -13,7 +13,7 @@
       "dest": "/index.html"
     }
   ],
-  "buildCommand": null,
+  "buildCommand": "echo '跳过构建，直接部署静态文件'",
   "outputDirectory": "build/web-mobile",
   "framework": null,
   "headers": [
