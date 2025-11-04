@@ -1,20 +1,52 @@
-# Netlify配置文件
+# Netlify配置文件 - 优化版适用于Cocos Creator
 [build]
   publish = "build/web-mobile"
-  command = "npm run build"
+  command = "echo '使用预构建的静态文件'"
 
 [build.environment]
   NODE_VERSION = "18"
 
+# 安全头设置
 [[headers]]
   for = "/*"
   [headers.values]
-    X-Frame-Options = "DENY"
+    X-Frame-Options = "SAMEORIGIN"
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
 
-# 重定向规则
+# 静态资源缓存
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.gif"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.json"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# SPA重定向规则
 [[redirects]]
   from = "/*"
   to = "/index.html"
