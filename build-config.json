@@ -9,7 +9,7 @@
     "db://assets/MainMenu.scene",
     "db://assets/GameScence.scene"
   ],
-  "md5Cache": true,
+  "md5Cache": false,
   "mergeStartScene": false,
-  "debug": false
+  "debug": true
 }
