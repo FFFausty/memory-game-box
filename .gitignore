@@ -5,7 +5,7 @@
 library/
 temp/
 local/
-build/
+# build/  # 注释掉这一行，允许构建结果被跟踪
 profiles/
 native
 #//////////////////////////
