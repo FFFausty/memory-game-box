@@ -1,0 +1,251 @@
+{
+  "__type__": "cc.Scene",
+  "_name": "MainScene",
+  "_objFlags": 0,
+  "_native": "",
+  "canvas": {
+    "__type__": "cc.Canvas",
+    "_name": "Canvas",
+    "_objFlags": 0,
+    "_native": "",
+    "_children": [
+      {
+        "__type__": "cc.Node",
+        "_name": "MainMenu",
+        "_objFlags": 0,
+        "_native": "",
+        "_children": [
+          {
+            "__type__": "cc.Node",
+            "_name": "Title",
+            "_objFlags": 0,
+            "_native": "",
+            "_children": [],
+            "_components": [
+              {
+                "__type__": "cc.Label",
+                "_name": "Label",
+                "_objFlags": 0,
+                "_native": "",
+                "string": "神经衰弱记忆游戏",
+                "fontSize": 48,
+                "lineHeight": 60,
+                "horizontalAlign": 1,
+                "verticalAlign": 1
+              }
+            ],
+            "_position": {
+              "__type__": "cc.Vec3",
+              "x": 0,
+              "y": 200,
+              "z": 0
+            }
+          },
+          {
+            "__type__": "cc.Node",
+            "_name": "StartButton",
+            "_objFlags": 0,
+            "_native": "",
+            "_children": [],
+            "_components": [
+              {
+                "__type__": "cc.Button",
+                "_name": "Button",
+                "_objFlags": 0,
+                "_native": ""
+              },
+              {
+                "__type__": "cc.Label",
+                "_name": "Label",
+                "_objFlags": 0,
+                "_native": "",
+                "string": "开始游戏",
+                "fontSize": 32,
+                "lineHeight": 40
+              }
+            ],
+            "_position": {
+              "__type__": "cc.Vec3",
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          }
+        ],
+        "_components": [],
+        "_position": {
+          "__type__": "cc.Vec3",
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "active": true
+      },
+      {
+        "__type__": "cc.Node",
+        "_name": "GameUI",
+        "_objFlags": 0,
+        "_native": "",
+        "_children": [
+          {
+            "__type__": "cc.Node",
+            "_name": "ScoreLabel",
+            "_objFlags": 0,
+            "_native": "",
+            "_children": [],
+            "_components": [
+              {
+                "__type__": "cc.Label",
+                "_name": "Label",
+                "_objFlags": 0,
+                "_native": "",
+                "string": "得分: 0",
+                "fontSize": 24,
+                "lineHeight": 30
+              }
+            ],
+            "_position": {
+              "__type__": "cc.Vec3",
+              "x": -400,
+              "y": 280,
+              "z": 0
+            }
+          },
+          {
+            "__type__": "cc.Node",
+            "_name": "TimerLabel",
+            "_objFlags": 0,
+            "_native": "",
+            "_children": [],
+            "_components": [
+              {
+                "__type__": "cc.Label",
+                "_name": "Label",
+                "_objFlags": 0,
+                "_native": "",
+                "string": "时间: 0:00",
+                "fontSize": 24,
+                "lineHeight": 30
+              }
+            ],
+            "_position": {
+              "__type__": "cc.Vec3",
+              "x": 400,
+              "y": 280,
+              "z": 0
+            }
+          },
+          {
+            "__type__": "cc.Node",
+            "_name": "GameBoard",
+            "_objFlags": 0,
+            "_native": "",
+            "_children": [],
+            "_components": [],
+            "_position": {
+              "__type__": "cc.Vec3",
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          }
+        ],
+        "_components": [],
+        "_position": {
+          "__type__": "cc.Vec3",
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "active": false
+      },
+      {
+        "__type__": "cc.Node",
+        "_name": "GameOverUI",
+        "_objFlags": 0,
+        "_native": "",
+        "_children": [
+          {
+            "__type__": "cc.Node",
+            "_name": "FinalScore",
+            "_objFlags": 0,
+            "_native": "",
+            "_children": [],
+            "_components": [
+              {
+                "__type__": "cc.Label",
+                "_name": "Label",
+                "_objFlags": 0,
+                "_native": "",
+                "string": "最终得分: 0",
+                "fontSize": 36,
+                "lineHeight": 45
+              }
+            ],
+            "_position": {
+              "__type__": "cc.Vec3",
+              "x": 0,
+              "y": 100,
+              "z": 0
+            }
+          },
+          {
+            "__type__": "cc.Node",
+            "_name": "RestartButton",
+            "_objFlags": 0,
+            "_native": "",
+            "_children": [],
+            "_components": [
+              {
+                "__type__": "cc.Button",
+                "_name": "Button",
+                "_objFlags": 0,
+                "_native": ""
+              },
+              {
+                "__type__": "cc.Label",
+                "_name": "Label",
+                "_objFlags": 0,
+                "_native": "",
+                "string": "重新开始",
+                "fontSize": 28,
+                "lineHeight": 35
+              }
+            ],
+            "_position": {
+              "__type__": "cc.Vec3",
+              "x": 0,
+              "y": -50,
+              "z": 0
+            }
+          }
+        ],
+        "_components": [],
+        "_position": {
+          "__type__": "cc.Vec3",
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "active": false
+      }
+    ],
+    "_components": [
+      {
+        "__type__": "cc.GameManager",
+        "_name": "GameManager",
+        "_objFlags": 0,
+        "_native": ""
+      }
+    ],
+    "designResolution": {
+      "__type__": "cc.Size",
+      "width": 960,
+      "height": 640
+    },
+    "fitHeight": false,
+    "fitWidth": true
+  },
+  "_children": [],
+  "_components": []
+}
